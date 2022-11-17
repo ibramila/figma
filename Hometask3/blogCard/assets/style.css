@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(to bottom right, #FCCC3D, #FD573A); */
+    background-image: linear-gradient(to bottom left, red, yellow);
+}
+
+.card {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: white;
+    height: 500px;
+    width: 1000px;
+}
+
+.image-part {
+    position: absolute;
+    border: 1px solid #fc523a;
+    background-color: #fc523a;
+    border-radius: 30px;
+    width: 370px;
+    height: 362px;
+    z-index: 999;
+    top: 70px;
+    left: -65px;
+
+}
+
+.card-content {
+    top: 50%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 550px;
+    height: 300px;
+    line-height: 30px;
+
+}
+
+h3 {
+    top: 30px;
+    left: 50%;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #827f94;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+p {
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #827f94;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+button {
+    position: absolute;
+    bottom: 95px;
+    left: 396px;
+    border: 1px solid #fc523a;
+    background-image: linear-gradient(to bottom left, red, yellow);
+    color: white;
+    border-radius: 30px;
+    font-size: 20px;
+    width: 200px;
+    height: 65px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.paggination {
+    position: absolute;
+    right: 29px;
+    top: 42%;
+}
+
+.circle1,
+.circle2 {
+    position: absolute;
+    border: 1px solid #d0d3d9;
+    background-color: #d0d3d9;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+
+.circle2 {
+    top: 68px;
+
+}
+
+.main-circle {
+    position: absolute;
+    border: 1px solid #fc3838;
+    background-color: #fc3838;
+    right: -15px;
+    width: 12px;
+    height: 30px;
+    top: 27px;
+    border-radius: 15px;
+}

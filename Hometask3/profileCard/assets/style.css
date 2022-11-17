@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.main {
+    background-color: #bb90dbbc;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.main-card {
+    position: relative;
+    top: 50%;
+    left: 50%; 
+    width: 400px;
+    height: 300px;
+    transform: translate(-50%,-50%);
+    border: 3px solid grey;
+    background-color: grey;
+    border-radius: 15px;
+    border-width: 10px; 
+}
+.img img{
+    border-radius: 15px;
+    position: absolute;
+    width: 400px;
+    height: 300px;
+}
+.words{
+    line-height: 10px;
+    font-family: 'Lato', sans-serif;
+    text-shadow: 2px 1px black;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(158, 158, 158);
+    position: absolute;
+    font-size: 20px;
+    bottom: 30px;
+    left: 93px;
+}
+button{
+    bottom: -70px   ;
+    left: 50px;
+    width: 300px;
+    height: 45px;
+    background-color: aliceblue;
+    color: #bb90dbbc;
+    letter-spacing: 10px;
+    font-weight: bold;
+    border: 1px solid aliceblue ;
+    border-radius: 50px;
+    font-size: 20px;
+    position: absolute;
+}
+#icon1, #icon2, #icon3, #icon4{
+    position: absolute;
+    bottom: 10px;
+    width: 30px;
+    height: 30px;
+}
+#icon1{
+    left: 115px;
+}
+#icon2{
+    left: 158px;
+}
+#icon3{
+    left:204px;
+}
+#icon4{
+    left: 248px;
+}
