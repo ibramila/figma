@@ -25,26 +25,25 @@ nav {
     padding: 30px;
     width: 74%;
     margin: 0 auto;
-    /* position: relative; şşşş*/
-
 }
 
 .logo {
     font-size: 30px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
+    margin-right: 50px;
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .nav-links ul {
     display: flex;
     justify-content: center;
-    flex-grow: 1;
+    flex-grow: 2;
 }
 
 .nav-links ul li {
@@ -61,45 +60,21 @@ nav {
 
 .nav-button {
     position: relative;
+    justify-items: flex-end;
     width: 30px;
     height: 30px;
+    /* flex-grow: 3; */
+
 }
 
-.hamburger {
-    background-color: #f5f2f2;
+.nav-button button {
     border: none;
-}
-/* .hamburger:active{
-} */
+    background-color: #f5f2f2;
 
-.hamburger div:nth-child(1) {
-    top: 0;
-    right: 0;
-    width: 26px;
-    height: 5px;
-    border: 1px solid black;
-    background-color: black;
-    position: absolute;
 }
 
-.hamburger div:nth-child(2) {
-    top: 11px;
-    right: 0;
-    width: 18px;
-    height: 5px;
-    border: 1px solid black;
-    background-color: black;
-    position: absolute;
+.nav-button i {
+    font-size: 30px;
+    color: black;
+
 }
-
-.hamburger div:nth-child(3) {
-    top: 22px;
-    right: 0;
-    width: 8px;
-    height: 5px;
-    border: 1px solid black;
-    background-color: black;
-    position: absolute;
-}
-
-
