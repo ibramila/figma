@@ -15,7 +15,7 @@
     transform: translate(-50%, -50%);
 }
 
-.part-2 h2 {
+.concept h2 {
     text-align: center;
     color: #252B42;
     font-size: 40px;
@@ -26,7 +26,7 @@
     margin-bottom: 10px;
 }
 
-.part-2 p {
+.concept p {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
