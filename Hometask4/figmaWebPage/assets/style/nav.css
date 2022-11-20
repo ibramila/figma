@@ -12,9 +12,10 @@ body {
 }
 
 nav {
-    position: sticky;
+    width: 100%;
+    position: fixed;
     top: 0px;
-    z-index: 9999999;
+    z-index: 9999999999999;
     background-color: #f5f2f2;
     padding: 10px 0;
 }
@@ -23,7 +24,7 @@ nav {
     top: 0;
     height: 15px;
     padding: 30px;
-    width: 90%;
+    /* width: 90% !important; */
     margin-left: 90px;
 }
 
@@ -97,7 +98,7 @@ nav {
 }
 
 #nav-button ul {
-    right: 0px;
+    right: -49px;
     position: absolute;
     display: flex;
     flex-direction: column;
