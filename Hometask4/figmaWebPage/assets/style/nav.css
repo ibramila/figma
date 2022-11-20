@@ -9,7 +9,6 @@
 body {
     height: 200vh;
     width: 100%;
-    position: relative;
 }
 
 nav {
@@ -24,8 +23,8 @@ nav {
     top: 0;
     height: 15px;
     padding: 30px;
-    width: 74%;
-    margin-left: 30px;
+    width: 90%;
+    margin-left: 90px;
 }
 
 .logo {
@@ -61,16 +60,17 @@ nav {
 
 .nav-button {
     position: relative;
-    justify-items: flex-end;
-    width: 30px;
+    display: flex;
+    justify-content: flex-end;
+    width: 47%;
     height: 30px;
-    /* flex-grow: 3; */
 
 }
 
 .nav-button button {
     border: none;
     background-color: #f5f2f2;
+    width: 30px;
 
 }
 
@@ -78,4 +78,228 @@ nav {
     font-size: 30px;
     color: black;
 
+}
+
+#home {
+    position: relative;
+}
+
+#home::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #295C7A;
+    transition: .3s;
+}
+
+#home:hover::after {
+    width: 100%;
+}
+
+#home ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    top: calc(100% + 10px);
+    width: 200px;
+    background-color: white;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+}
+
+#home:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+#home ul li {
+    display: block;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#home ul li:hover {
+    color: #D0A144;
+}
+
+
+
+
+#product {
+    position: relative;
+}
+
+#product::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #295C7A;
+    transition: .3s;
+}
+
+#product:hover::after {
+    width: 100%;
+}
+
+#product ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    top: calc(100% + 10px);
+    width: 200px;
+    background-color: white;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+}
+
+#product:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+#product ul li {
+    display: block;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#product ul li:hover {
+    color: #D0A144;
+}
+
+
+
+#pricing {
+    position: relative;
+}
+
+#pricing::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #295C7A;
+    transition: .3s;
+}
+
+#pricing:hover::after {
+    width: 100%;
+}
+
+#pricing ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    top: calc(100% + 10px);
+    width: 200px;
+    background-color: white;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+}
+
+#pricing:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+#pricing ul li {
+    display: block;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#pricing ul li:hover {
+    color: #D0A144;
+}
+
+
+
+#contact {
+    position: relative;
+}
+
+#contact::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #295C7A;
+    transition: .3s;
+}
+
+#contact:hover::after {
+    width: 100%;
+}
+
+#contact ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    top: calc(100% + 10px);
+    width: 200px;
+    background-color: white;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+}
+
+#contact:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+#contact ul li {
+    display: block;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#contact ul li:hover {
+    color: #D0A144;
 }
