@@ -113,3 +113,8 @@
     width: 34%;
     height: 113%;
 }
+.main-card button:hover{
+    background-color: #D0A144;
+    color: #F3F3F3;
+    transition: 0.6s cubic-bezier(1,.47,.53,.37);
+}

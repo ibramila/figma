@@ -84,3 +84,7 @@
     letter-spacing: 0.1px;
     color: #737373;
 }
+.cards:hover{
+     background-color: #d2c6ae;
+     transition: 0.8s;
+}

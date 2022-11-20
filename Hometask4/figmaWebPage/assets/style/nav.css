@@ -69,13 +69,18 @@ nav {
     justify-content: flex-end;
     width: 47%;
     height: 30px;
-
 }
 
 
 .nav-button i {
     font-size: 30px;
     color: black;
+}
+
+.nav-button button {
+    background-color: #f5f2f2;
+    border: #f5f2f2;
+    cursor:pointer;
 }
 
 #nav-button::after {
@@ -86,7 +91,7 @@ nav {
     width: 0%;
 }
 
-#nav-button:hover::after {
+#nav-button:active::after {
     width: 100%;
     cursor: pointer;
 }
@@ -109,7 +114,7 @@ nav {
     transition: .3s ease-in-out;
 }
 
-#nav-button:hover ul {
+#nav-button:focus ul {
     visibility: visible;
     opacity: 1;
 }
@@ -124,13 +129,15 @@ nav {
     cursor: pointer;
     transition: .3s;
 }
-#nav-button ul li a{
+
+#nav-button ul li a {
     font-size: 14px;
     color: #737373;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
-#nav-button ul li a:hover{
+
+#nav-button ul li a:hover {
     color: #f5f2f2;
 }
 
