@@ -34,6 +34,11 @@ nav {
     margin-right: 50px;
 }
 
+#logo:hover {
+    color: #D0A144;
+
+}
+
 .navbar {
     display: flex;
     justify-content: flex-start;
@@ -67,18 +72,73 @@ nav {
 
 }
 
-.nav-button button {
-    border: none;
-    background-color: #f5f2f2;
-    width: 30px;
-
-}
 
 .nav-button i {
     font-size: 30px;
     color: black;
-
 }
+
+#nav-button::after {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+}
+
+#nav-button:hover::after {
+    width: 100%;
+    cursor: pointer;
+}
+
+#nav-button ul {
+    right: 0px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    top: calc(100% + 10px);
+    width: 200px;
+    background-color: white;
+    border-radius: 38px;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+}
+
+#nav-button:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+#nav-button ul li {
+    display: block;
+    border: 1px;
+    border-radius: 90px;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+#nav-button ul li a{
+    font-size: 14px;
+    color: #737373;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+#nav-button ul li a:hover{
+    color: #f5f2f2;
+}
+
+#nav-button ul li:hover {
+    color: white;
+    background-color: #295c7a9e;
+}
+
 
 #home {
     position: relative;
@@ -108,7 +168,7 @@ nav {
     top: calc(100% + 10px);
     width: 200px;
     background-color: white;
-    border-radius: 6px;
+    border-radius: 38px;
     padding: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     opacity: 0;
@@ -122,6 +182,8 @@ nav {
 }
 
 #home ul li {
+    border: 1px;
+    border-radius: 90px;
     display: block;
     margin-right: 0 !important;
     margin-left: 0 !important;
@@ -131,11 +193,8 @@ nav {
 }
 
 #home ul li:hover {
-    color: #D0A144;
+    background-color: #d0a14482;
 }
-
-
-
 
 #product {
     position: relative;
@@ -165,7 +224,7 @@ nav {
     top: calc(100% + 10px);
     width: 200px;
     background-color: white;
-    border-radius: 6px;
+    border-radius: 38px;
     padding: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     opacity: 0;
@@ -182,17 +241,16 @@ nav {
     display: block;
     margin-right: 0 !important;
     margin-left: 0 !important;
-
+    border: 1px;
+    border-radius: 90px;
     padding: 10px;
     cursor: pointer;
     transition: .3s;
 }
 
 #product ul li:hover {
-    color: #D0A144;
+    background-color: #d0a14482;
 }
-
-
 
 #pricing {
     position: relative;
@@ -222,7 +280,7 @@ nav {
     top: calc(100% + 10px);
     width: 200px;
     background-color: white;
-    border-radius: 6px;
+    border-radius: 38px;
     padding: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     opacity: 0;
@@ -237,6 +295,8 @@ nav {
 
 #pricing ul li {
     display: block;
+    border: 1px;
+    border-radius: 90px;
     margin-right: 0 !important;
     margin-left: 0 !important;
     padding: 10px;
@@ -245,10 +305,8 @@ nav {
 }
 
 #pricing ul li:hover {
-    color: #D0A144;
+    background-color: #d0a14482;
 }
-
-
 
 #contact {
     position: relative;
@@ -278,7 +336,7 @@ nav {
     top: calc(100% + 10px);
     width: 200px;
     background-color: white;
-    border-radius: 6px;
+    border-radius: 38px;
     padding: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     opacity: 0;
@@ -293,6 +351,8 @@ nav {
 
 #contact ul li {
     display: block;
+    border: 1px;
+    border-radius: 90px;
     margin-right: 0 !important;
     margin-left: 0 !important;
     padding: 10px;
@@ -301,5 +361,5 @@ nav {
 }
 
 #contact ul li:hover {
-    color: #D0A144;
+    background-color: #d0a14482;
 }
