@@ -103,10 +103,10 @@ nav {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    top: calc(100% + 10px);
+    top: -25px;
     width: 200px;
     background-color: white;
-    border-radius: 38px;
+    border-radius: 38px 10px 10px 38px;
     padding: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     opacity: 0;
